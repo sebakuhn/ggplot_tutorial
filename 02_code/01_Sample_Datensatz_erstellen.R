@@ -2,7 +2,7 @@
 ## Sebastian Kuhn. 29.09.2021
 
 ## countrycode-Paket laden
-# Im QOG-Datensatz ist sine keine Informationen zur kontinentalen Zugehörigkeit der Länder enthalten.
+# Im QOG-Datensatz ist keine Information zur kontinentalen Zugehörigkeit der Länder enthalten.
 # Das countrycode-Paket umfasst neben dieser Variable auch zahlreiche weitere länderspezifischen ID-Variablen
 
 # install.packages("countrycode")
@@ -10,8 +10,8 @@ library(countrycode)
 library(tidyverse)
 
 ## QOG-Daten importieren
-qog <- readr::read_csv("https://www.qogdata.pol.gu.se/data/qog_std_cs_jan21.csv") #Standard-Datensatz
-qog_ts <- readr::read_csv("https://www.qogdata.pol.gu.se/data/qog_std_ts_jan21.csv") #Zeitreihen-Datensatz
+qog <- readr::read_csv("https://www.qogdata.pol.gu.se/data/qog_std_cs_jan26.csv") #Standard-Datensatz
+qog_ts <- readr::read_csv("https://www.qogdata.pol.gu.se/data/qog_std_ts_jan26.csv") #Zeitreihen-Datensatz
 
 ## Informationen zu den Kontinenten zum Datensatz hinzufügen
 # Standard-Datensatz
