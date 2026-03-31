@@ -1,0 +1,13 @@
+# R-spezifische Dateien
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj.user
+
+# Ausgabe-Dateien (werden aus dem Code erzeugt)
+03_markdown/*.html
+03_markdown/*.pdf
+
+# Betriebssystem
+.DS_Store
+Thumbs.db
