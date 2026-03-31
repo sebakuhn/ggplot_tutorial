@@ -1,6 +1,7 @@
 # Datenvisualisierung mit ggplot2 — Eine Einführung
 
-Ein praxisorientiertes Tutorial zur Datenvisualisierung mit dem R-Paket `ggplot2`, entwickelt auf Basis des [Quality of Government (QOG) Datensatzes](https://www.gu.se/en/quality-government/qog-data).
+Ein praxisorientiertes Tutorial zur Datenvisualisierung mit dem R-Paket `ggplot2`. Basiert auf einem älteren Videotutorial aus dem jahr 2021, das ich einmal für die FernUniversität in Hagen gemacht hatte. Update und Revision im April 2026.
+Datenbasis: [Quality of Government (QOG) Datensatz](https://www.gu.se/en/quality-government/qog-data).
 
 ## Inhalt
 
@@ -13,7 +14,7 @@ Ein praxisorientiertes Tutorial zur Datenvisualisierung mit dem R-Paket `ggplot2
 | `02_code/05_Zeitreihen_und_facets.R` | Zeitreihen und facet_wrap |
 | `03_markdown/Einführung_ggplot2_Skript.Rmd` | Vollständiges Tutorial als R Markdown |
 
-## Voraussetzungen
+## Wichtigste Voraussetzungen
 
 - R (>= 4.0)
 - RStudio
