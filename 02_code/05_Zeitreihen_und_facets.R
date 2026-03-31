@@ -6,7 +6,7 @@ library(tidyverse) # lädt alle Pakete des "tidyverse" - unter anderem ggplot2 u
 library(here)
 
 ## Verwenden Sie bitte den Auszug aus dem QOG-Zeitreihen-Datensatz - beispielsweise mit
-qog_ts <- read.csv("01_data/qog_ts_sample.csv") # Laufwerk und Verzeichnis ggf. anpassen
+qog_ts <- read.csv(here("01_data/qog_ts_sample.csv"))
 
 
 
@@ -84,7 +84,7 @@ qog_ts %>%
 qog_ts %>%
   filter(ccodealp == "RWA" & year > 1960) %>%
   ggplot(aes(x=year,  y=wdi_pop, color = cname)) +
-  geom_line(size = 2) +
+  geom_line(linewidth = 2) +
   geom_point(size = 2, shape = 21, color = "black", fill = "white") +
   labs(title = "Bevölkerungsentwicklung in Ruanda",
        x ="Jahr",

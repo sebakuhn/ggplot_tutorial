@@ -6,7 +6,7 @@ library(tidyverse) # lädt alle Pakete des "tidyverse" - unter anderem ggplot2 u
 library(here)
 
 ## Verwenden Sie bitte den Auszug aus dem QOG-Datensatz - beispielsweise mit
-qog <- read.csv("01_data/qog_sample.csv") # Laufwerk und Verzeichnis ggf. anpassen
+qog <- read.csv(here("01_data/qog_sample.csv"))
 
 ### -------------------------------------------------------------------------------------------------------
 
