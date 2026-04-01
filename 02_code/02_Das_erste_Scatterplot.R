@@ -1,11 +1,11 @@
 ### Datenvisualisierung mit ggplot2 - Teil 2: Das erste Scatterplot
-### -------------------------------------------------------------------------------------------------------
+## Sebastian Kuhn. 29.09.2021 - Update April 2026
 
 ## Wichtige Pakete laden und Datensatz importieren
 library(tidyverse) # lädt alle Pakete des "tidyverse" - unter anderem ggplot2 und readr
 library(here)
 
-## Verwenden Sie bitte den Auszug aus dem QOG-Datensatz - beispielsweise mit
+## QOG-Samle-Datensatz - beispielsweise mit
 qog <- read.csv(here("01_data/qog_sample.csv"))
 
 ## Für den Import der originalen Version des QOG Standard_Datensatzes:
@@ -14,7 +14,6 @@ qog <- read.csv(here("01_data/qog_sample.csv"))
 ### -------------------------------------------------------------------------------------------------------
 
 ### Und los geht's!: Das erste Streudiagramm
-
 ## Variablen:
 
 # wdi_dgovhexp
@@ -66,15 +65,3 @@ p + geom_line()
 # Darstellung mit Dichte-Plot
 p + geom_density_2d() +
   geom_point()
-
-## Sinnvoller Aufbau eines ggplots
-# Wir beginnen mit einem möglichst "aufgeräumten" Datensatz und gehen dann wie folgt vor:
-
-# 1. Teilen Sie der Funktion ggplot() mit, welche Daten Sie verwenden wollen.
-# 2. Sagen Sie ggplot(), welche Variablen Sie dargestellt haben wollen.
-#     Der Einfachheit halber speichern Sie die Ergebnisse der ersten beiden Schritte in ein Objekt namens "p".
-# 3. Teilen Sie ggplot mit, welchen Darstellungstyp Sie gerne sehen wollen.
-#     Verwenden Sie dazu die vorgesehenen geom_()-Funktionen, indem Sie diese einzeln und nacheinander zum Objekt "p" hinzufügen.
-# 4. Verwenden Sie Zusatzfunktionen, um Skalen, Beschriftungen, Markierungen, Titel
-#     und vieles mehr hinzufügen.
-

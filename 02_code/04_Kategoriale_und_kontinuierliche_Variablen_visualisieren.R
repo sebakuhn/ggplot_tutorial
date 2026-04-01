@@ -1,12 +1,15 @@
 ### Datenvisualisierung mit ggplot2 - Teil 4: Darstellung kategorialer und kontinuierlicher Variablen
-### -------------------------------------------------------------------------------------------------------
+## Sebastian Kuhn. 29.09.2021 - Update April 2026
 
 ## Wichtige Pakete laden und Datensatz importieren
 library(tidyverse) # lädt alle Pakete des "tidyverse" - unter anderem ggplot2 und readr
 library(here)
 
-## Verwenden Sie bitte den Auszug aus dem QOG-Datensatz - beispielsweise mit
+## QOG-Samle-Datensatz - beispielsweise mit
 qog <- read.csv(here("01_data/qog_sample.csv"))
+
+## Für den Import der originalen Version des QOG Standard_Datensatzes:
+#qog <- readr::read_csv("https://www.qogdata.pol.gu.se/data/qog_std_cs_jan21.csv") #Standard-Datensatz
 
 ### -------------------------------------------------------------------------------------------------------
 
@@ -46,11 +49,11 @@ p + geom_bar()
 
 # Verschiedene Optionen zur Platzierung der Legende
 p + geom_bar() +
-  # theme(legend.position = "bottom") # Legende unten
+  theme(legend.position = "bottom") # Legende unten
   # theme(legend.position = "top") # Legende oben
   # theme(legend.position = "left") # Legende links
   # theme(legend.position = "right") # Legende rechts
-  theme(legend.position = "") # Keine Legende
+  # theme(legend.position = "") # Keine Legende
 
 # Manuelle Einfärbung der Balken
 p + geom_bar() +

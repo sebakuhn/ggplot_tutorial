@@ -1,12 +1,13 @@
 ### Datenvisualisierung mit ggplot2 - Teil 5: Zeitreihen und facets
-### -------------------------------------------------------------------------------------------------------
+## Sebastian Kuhn. 29.09.2021 - Update April 2026
 
 ## Wichtige Pakete laden und Datensatz importieren
 library(tidyverse) # lädt alle Pakete des "tidyverse" - unter anderem ggplot2 und readr
 library(here)
 
 ## Verwenden Sie bitte den Auszug aus dem QOG-Zeitreihen-Datensatz - beispielsweise mit
-qog_ts <- read.csv(here("01_data/qog_ts_sample.csv"))
+qog_ts <- read.csv(here("01_data/qog_ts_sample.csv")) %>%
+  mutate(year = as.integer(.data$year))
 
 
 

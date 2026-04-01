@@ -1,16 +1,19 @@
 ### Datenvisualisierung mit ggplot2 - Teil 3: Unser Scatterplot erweitern und anpassen {#scatter}
-### -------------------------------------------------------------------------------------------------------
+## Sebastian Kuhn. 29.09.2021 - Update April 2026
 
 ## Wichtige Pakete laden und Datensatz importieren
 library(tidyverse) # lädt alle Pakete des "tidyverse" - unter anderem ggplot2 und readr
 library(here)
 
-## Verwenden Sie bitte den Auszug aus dem QOG-Datensatz - beispielsweise mit
+## QOG-Samle-Datensatz - beispielsweise mit
 qog <- read.csv(here("01_data/qog_sample.csv"))
+
+## Für den Import der originalen Version des QOG Standard_Datensatzes:
+#qog <- readr::read_csv("https://www.qogdata.pol.gu.se/data/qog_std_cs_jan21.csv") #Standard-Datensatz
 
 ### -------------------------------------------------------------------------------------------------------
 
-# Streudiagramm aus dem letzten Tutorial nochmal erstellen
+# Streudiagramm aus dem letzten Skript nochmal erstellen
 p <- ggplot(qog, aes(x = wdi_dgovhexp, y = wdi_lifexp))
 p + geom_point()
 
@@ -42,9 +45,6 @@ p1 | p2
 ### -------------------------------------------------------------------------------------------------------
 
 ### Die scale()-Funktion
-
-# help.search()-Funktion von R verwenden (?? ist gleichbedeutend mit help.search())
-??scale_
 
 # Koordinatensystem mit einer Skalierung von 0 bis 100 auf beiden Achsen
 p + scale_x_continuous(limits = c(0, 100)) +
@@ -163,7 +163,7 @@ p + geom_point() +
 
 ### -------------------------------------------------------------------------------------------------------
 
-### Darstellung verbessern {#verbessern}
+### Darstellung verbessern
 
 # Umrandete Punkte verwenden
 p + geom_point(shape = 21) +

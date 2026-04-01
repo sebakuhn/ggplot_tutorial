@@ -1,5 +1,5 @@
 ### Auszug aus dem QOG-Datensatz erstellen und zusätzliche Variablen hinzufügen ###
-## Sebastian Kuhn. 29.09.2021
+## Sebastian Kuhn. 29.09.2021 - Update April 2026
 
 ## countrycode-Paket laden
 # Im QOG-Datensatz ist keine Information zur kontinentalen Zugehörigkeit der Länder enthalten.
@@ -82,6 +82,7 @@ qog_sample <-
 qog_ts_sample <-
   qog_ts %>%
   select(
+    year,
     ccodealp,
     ccode,
     cname,
